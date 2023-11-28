@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_main"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/mainAlarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="복용약 알림"
+                    android:textColor="#000000"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/setAlarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:hint="알람 이름 설정"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+
+                <Button
+                    android:id="@+id/alDel"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="#FF0000"
+                    android:text="삭제"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:hint="약 이름을 입력"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Switch
+                        android:id="@+id/morningAft"
+                        android:checked="false"
+                        android:showText="true"
+                        android:textSize="10sp"
+                        android:textOn="오후"
+                        android:textOff="오전"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <NumberPicker
+                        android:id="@+id/setHour1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+
+                    <TextView
+                        android:id="@+id/setHour2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="시"
+                        android:textSize="25sp" />
+
+                    <NumberPicker
+                        android:id="@+id/setMin1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+
+                    <TextView
+                        android:id="@+id/setMin2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="분"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btnSun"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="일"
+                        android:textSize="23sp" />
+
+                    <Button
+                        android:id="@+id/btnMon"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="10dp"
+                        android:text="월"
+                        android:textSize="23sp" />
+
+                    <Button
+                        android:id="@+id/btnTus"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="10dp"
+                        android:text="화"
+                        android:textSize="23sp" />
+
+                    <Button
+                        android:id="@+id/btnWed"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="10dp"
+                        android:text="수"
+                        android:textSize="23sp" />
+
+                    <Button
+                        android:id="@+id/btnThu"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="10dp"
+                        android:text="목"
+                        android:textSize="23sp" />
+
+                    <Button
+                        android:id="@+id/btnFri"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="10dp"
+                        android:text="금"
+                        android:textSize="23sp" />
+
+                    <Button
+                        android:id="@+id/btnSat"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="10dp"
+                        android:text="토"
+                        android:textSize="23sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="반복 주기"
+                        android:textColor="@color/black"
+                        android:textSize="25sp" />
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp">
+                    </Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="알람 소리"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        />
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp">
+                    </Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="소리 조절"
+                        android:textColor="@color/black"
+                        android:textSize="25sp" />
+                    <SeekBar
+                        android:id="@+id/seekBar"
+                        android:layout_width="250dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnStart"
+                    android:layout_width="380dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="50dp"
+                    android:text="등록"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

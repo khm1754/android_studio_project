@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_main" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="1. 노인치과지원"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:text="만 65세 이상 부분 무치약 환자 대상 평생 2개 조건으로 본인 부담률은 건강보험 30%, 차상위 10~20%, 의료 1종 10%, 의료급여 2종 20%를 부담하게 됩니다."
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="2. 노인 틀니 지원"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:text="만 65세 이상 어르신이라면 본인 부담금 30%로 하실 수 있습니다. (본인 부담금 추가 감면 대상자 : 만성질환자 20%, 희귀난치성 질환자 10%)
+1악당 7년 1회 적용, 신청 및 문의는 주소지 관할 시, 군, 구청 주민센터에서 하실 수 있습니다."
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="3. 노인 치매 검진 지원"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:text="만 60세 이상분은 선별검사가 가능하며, 만 60세 이상 중위소득 120% 이하 어르신은 진단까지도 지원받으실 수 있습니다. 또한, 선별검사 결과에서 정밀검사가 필요하다고 할 시 전국 600여개소 협약병원에서 추가 진단 및 검사, 검사비 일부를 지원받으실 수 있습니다."
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="4. 노인 안(눈)검진 지원"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:text="만 60세 (저소득층 우선 대상) 어르신을 대상으로 노인 안(눈) 검진을 지원. 만 60세 이상 기초생활수급자, 한부모가족, 차상위계층 어르신을 대상으로 '노인개안수술'을 지원, 백내장, 망막질환 등 안질환자의 개인수술비용에 대한 본인부담금 전액을 지원"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="5. 재난의료비 지원금액 확대"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:text="소득 대비 과도한 의료비 지출로 경제적 어려움을 겪는 가구의 의료비 부담을 덜어드리기 위해 의료비의 일부를 지원하는 사업입니다."
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

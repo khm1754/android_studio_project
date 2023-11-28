@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bottomnavi_one"
+        android:enabled="true"
+        android:title="날씨"
+        android:icon="@drawable/ic_baseline_wb_sunny_24"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/bottomnavi_two"
+        android:enabled="true"
+        android:title="진단"
+        android:icon="@drawable/ic_baseline_local_hospital_24"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/bottomnavi_three"
+        android:enabled="true"
+        android:title="긴급호출"
+        android:icon="@drawable/ic_baseline_call_24"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/bottomnavi_four"
+        android:enabled="true"
+        android:title="복지"
+        android:icon="@drawable/ic_baseline_monetization_on_24"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/bottomnavi_five"
+        android:enabled="true"
+        android:title="알람"
+        android:icon="@drawable/ic_outline_alarm_24"
+        app:showAsAction="always" />
+
+</menu>
